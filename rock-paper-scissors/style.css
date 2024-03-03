@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: chocolate;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.selection {
+  background: none;
+  font-size: 6rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.selection:hover {
+  transform: scale(1.2);
+}
+
+.results {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+  max-width: 400px;
+  margin: 2.5rem auto 0;
+  font-size: 30px;
+}
+
+.result-score {
+  font-size: 23px;
+  color: #444;
+}
+
+.result-selection {
+  opacity: 0.3;
+}
+
+.winner {
+  opacity: 1;
+}

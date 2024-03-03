@@ -1,0 +1,102 @@
+.container {
+  width: 100vh;
+  height: 900px;
+  margin: 100px auto;
+  width: 700px;
+  height: 200px;
+  border: 2px solid rgb(0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Dinosaur style and keyframe */
+#dino {
+  width: 70px;
+  height: 70px;
+  background-image: url("./imgs/dino2.png");
+  background-size: 70px 70px;
+  position: absolute;
+  top: 134px;
+  z-index: 1000;
+}
+
+.jump {
+  animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+  0% {
+    top: 134px;
+  }
+
+  25% {
+    top: 100px;
+  }
+  50% {
+    top: 60px;
+  }
+  75% {
+    top: 100px;
+  }
+  100% {
+    top: 134px;
+  }
+}
+
+/* Cactus style and keyframe */
+
+#cactus {
+  width: 20px;
+  height: 40px;
+  font-size: 30px;
+  background-image: url("./imgs/cactus2.png");
+  background-size: 20px 40px;
+  position: absolute;
+  top: 160px;
+  left: 680px;
+  animation: move 1s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    left: 680px;
+  }
+  100% {
+    left: -20px;
+  }
+}
+
+/* Game-Over */
+#game-over {
+  display: none;
+  font-size: 30px;
+  position: absolute;
+  right: 260px;
+  top: 54px;
+  padding: 10px;
+  /* color: red; */
+  font-family: sans-serif;
+}
+
+/* Show Score */
+#show-score {
+  display: none;
+  font-size: 17px;
+  position: absolute;
+  right: 272px;
+  top: 72px;
+  padding: 10px;
+  /* color: red; */
+  font-family: sans-serif;
+}
+
+/* Time score  */
+#time-score {
+  font-family: sans-serif;
+  /* background-color: blue; */
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 19px;
+  /* font-weight: 700; */
+}
